@@ -1,0 +1,427 @@
+main {max-width:calc(1920px - 60px); margin:0 auto;}
+/* 1. 타이틀 */
+.title_bg {
+    background: url(../images/main_bg.jpg) no-repeat center; 
+    background-size:cover;
+    /* position:relative; */
+}
+.title_bg .contents {
+    /* width:1200px; margin:0 auto; */
+    padding:300px 0 150px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.title_bg .contents .title {
+    text-align:center;
+    margin-bottom:450px;
+}
+.title_bg .contents .title .subtitle {
+    color:#fff; font-family:'ghanachoco'; 
+    font-size:2.5rem; line-height:50px;
+}
+.title_bg .contents .title h1 {
+    font-family: 'ghanachoco'; font-size:9rem; letter-spacing:-0.04em;
+    margin:20px 0;
+    color:#E6AA26
+}
+/* 2. 방콕소개(타이틀배경) */
+.title_bg .contents .intro {
+    border-radius:50px;
+    background:rgba(255,255,255,0.7);
+    padding:30px;
+}
+.title_bg .contents .intro {max-width:700px;}
+.title_bg .contents .intro .state {
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
+.title_bg .contents .intro .state img {}
+.title_bg .contents .intro .state span {
+    font-size:1.125rem; font-weight:500;
+    margin-left:10px;
+}
+.title_bg .contents .intro h2 {
+    font-family: 'ghanachoco'; font-size:1.777rem; color:#C13838;
+    margin:3px 0;
+}
+.title_bg .contents .intro .b_lang {}
+.title_bg .contents .intro .b_lang span {font-size:1.125rem; font-weight:500;}
+.title_bg .contents .intro .left .top .b_lang .en {}
+.title_bg .contents .intro .left .top .b_lang .th {}
+.title_bg .contents .intro .b_lang .en::after {
+    content:'';
+    display:inline-block; width:1px; height:10px;
+    background-color:#000;
+    margin-left:10px; margin-right:7px;
+}
+.title_bg .contents .intro .btm {
+    letter-spacing:-0.02em; line-height:25px;
+    margin-top:30px;
+}
+/* 공통디자인 */
+section h2 {
+    color:#433935; font-family: 'ghanachoco'; font-size:3.125rem;
+    margin-bottom:70px;
+}
+/* 3. 영상(미리보는 방콕) */
+.video_bg {background:#E1DED9}
+.video_bg .video {
+    padding:100px 0;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.video_bg .video h2 {}
+/* 4. travel_style */
+.t_style_bg {background:#E1DED9}
+.t_style_bg .t_style {
+    padding:100px 0;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.t_style_bg .t_style h2 {}
+.t_style_bg .t_style ul {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    /* padding:0 142px; */
+}
+.t_style_bg .t_style ul li {
+    max-width:250px; margin-right:50px;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.t_style_bg .t_style ul li:last-child {margin-right:0;}
+.t_style_bg .t_style ul li .top {
+    display:flex; flex-flow:column nowrap; align-items:center;
+    position:relative;
+    margin-bottom:20px;
+}
+.t_style_bg .t_style ul li .top img {
+    border-radius:125px;
+    overflow:hidden;
+}
+.t_style_bg .t_style ul li .top span {
+    padding:10px 20px; border-radius:30px; background-color:#6B25BF;
+    font-size:1.333rem; color:#fff;
+    position:absolute; left:50%; bottom:-30px;
+    transform:translate(-50%, -50%);
+}
+.t_style_bg .t_style ul li .btm {
+    font-size:1.125rem; font-weight:500; text-align:center;
+    letter-spacing:-0.02em; line-height:25px;
+}
+/* 5. 관광명소 */
+.tourism_bg {
+    background:url(../images/tourism_bg.jpg) fixed center;
+    background-size:cover;
+}
+.tourism_bg .tourism {
+    max-width:1440px;  margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+}
+.tourism_bg .tourism h2 {
+    font-family: 'ghanachoco'; font-size:3.125rem; color:#fff; 
+    letter-spacing:-0.02em;
+    text-align:right;
+}
+.tourism_bg .tourism h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #F9D949, #fff);
+    margin-bottom:50px;
+}
+.tourism_bg .tourism h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #F9D949, #fff);
+    margin-top:50px; 
+}
+.tourism_bg .tourism h2 em {
+    color: #F9D949; font-family: 'ghanachoco'; 
+    font-size:3.6rem; letter-spacing:-0.02em;
+    display:block; text-align:right;
+    margin-bottom:70px; margin-top:10px;
+}
+.tourism_bg .tourism ul {
+    width:100%;
+    display:flex;flex-flow:row nowrap; justify-content:center;
+}
+.tourism_bg .tourism li {
+    /* width:calc(33.33% - 60px / 3); */
+    text-align:right;
+    max-width:300px;
+    margin-right:70px;
+}
+.tourism_bg .tourism li:last-child {margin-right:0;}
+.tourism_bg .tourism li .img {
+    width:100%;
+    margin-bottom:10px;
+}
+.tourism_bg .tourism li .img img {
+    width:100%; overflow:hidden;
+    border-radius:0 100px 0 100px;
+    }
+.tourism_bg .tourism li .ko {
+    font-weight:700; font-size:1.777rem; color:#fff;
+}
+.tourism_bg .tourism li .en {
+    font-size:1.125rem; color:#fff; font-weight:500; margin:10px 0;
+}
+.tourism_bg .tourism li .desc {
+    color:#fff; letter-spacing:-0.02em; line-height:30px;
+}
+/* 6.인기명소 */
+.popular_bg {
+    background:url(../images/popular_bg.jpg) fixed center;
+    background-size:cover;
+}
+.popular_bg .popular {
+    max-width:1440px; margin:0 auto; padding:100px 0;
+    display:flex;flex-flow:column nowrap; align-items:flex-start;
+}
+.popular_bg .popular h2 {
+    font-family: 'ghanachoco'; font-size:3.125rem; color:#fff; 
+    letter-spacing:-0.02em;
+    text-align:left;
+}
+.popular_bg .popular h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-bottom:50px;
+}
+.popular_bg .popular h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-top:50px; 
+}
+.popular_bg .popular h2 em {
+    color: #EB455F; 
+    font-family: 'ghanachoco'; font-size:3.6rem; letter-spacing:-0.02em;
+    display:block; text-align:left;
+    margin-bottom:70px; margin-top:10px;
+}
+.popular_bg .popular ul {
+    width:100%;
+    display:flex;flex-flow:row nowrap; justify-content:center;
+}
+.popular_bg .popular li {
+    /* width:calc(33.33% - 60px / 3); */
+    max-width:300px;
+    margin-right:70px;
+}
+.popular_bg .popular li:last-child {margin-right:0;}
+.popular_bg .popular li .img {
+    width:100%;
+    margin-bottom:10px;  overflow:hidden;
+    
+}
+.popular_bg .popular li .img img {
+    width:100%;
+    border-radius:100px 0 100px 0;
+    box-shadow: 2px 2px 3px 2px rgba(255, 255, 255, 0.25);
+    }
+.popular_bg .popular li .ko {
+    font-weight:700; font-size:1.777rem; color:#fff;
+}
+.popular_bg .popular li .en {
+    font-size:1.125rem; color:#fff; font-weight:500; margin:10px 0;
+}
+.popular_bg .popular li .desc {
+    color:#fff; letter-spacing:-0.02em; line-height:25px;
+}
+.popular_bg .food_list {
+    width:1200px; margin:0 auto;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.popular_bg .food_list h3 {
+    color: #EB455F; font-family: 'ghanachoco'; font-size:2.25rem;
+}
+.popular_bg .food_list h3::before {
+    content:'';
+    display:block; width:500px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-bottom:15px;
+}
+.popular_bg .food_list h3::after {
+    content:'';
+    display:block; width:500px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-top:15px; margin-bottom:70px;
+}
+.popular_bg .food_list ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    padding:0 80px; margin-bottom:100px;
+}
+.popular_bg .food_list li {
+    /* width:calc(20% - 50px / 5);  */ max-width:180px;
+    margin-right:30px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.popular_bg .food_list img {
+    width:100%; border-radius:125%;
+}
+.popular_bg .food_list span {
+    font-weight:500; font-size:1.333rem; color:#fff;
+    margin-top:10px;
+}
+/* 7.가성비호텔 */
+.hotel_bg {
+    background:url(../images/hotel_bg.jpg) fixed center;
+    background-size:cover;
+}
+.hotel_bg .hotel {
+    max-width:1440px; margin:0 auto; padding:100px 0;
+    display:flex; flex-flow:column nowrap; align-items:flex-end;
+}
+.hotel_bg .hotel h2 {
+    font-family: 'ghanachoco'; font-size:3.125rem; color:#fff; 
+    letter-spacing:-0.02em;
+    text-align:right;
+}
+.hotel_bg .hotel h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #D5F302, #fff);
+    margin-bottom:50px;
+}
+.hotel_bg .hotel h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #D5F302, #fff);
+    margin-top:50px; 
+}
+.hotel_bg .hotel h2 em {
+    color: #FCFFE7;; 
+    font-family: 'ghanachoco'; font-size:3.6rem; letter-spacing:-0.02em;
+    display:block; text-align:right;
+    margin-bottom:0; margin-top:10px;
+}
+.hotel_bg .hotel a {
+    padding:10px 20px; border-radius:20px; background:#FCFFE7;
+    display:flex; flex-flow:row nowrap; align-items:center;
+    margin-bottom:70px; margin-top:-40px;
+}
+.hotel_bg .hotel a span {
+    font-family: 'ghanachoco'; font-size:1.625rem;
+}
+.hotel_bg .hotel a img {}
+.hotel_bg .hotel ul {
+    width:100%;
+    display:flex;flex-flow:row nowrap; justify-content:center;
+}
+.hotel_bg .hotel li {
+    /* width:calc(33.33% - 60px / 3); */
+    max-width:300px;
+    margin-right:70px;
+    transition:transform 0.5s;
+}
+.hotel_bg .hotel li:hover {transform:scale(1.2);}
+.hotel_bg .hotel li:last-child {margin-right:0;}
+.hotel_bg .hotel li .img {
+    width:100%;
+    margin-bottom:10px;
+}
+.hotel_bg .hotel li .img img {
+    width:100%; overflow:hidden;
+    border-radius:100px 0 100px 0;
+    }
+.hotel_bg .hotel li .ko {
+    font-weight:700; font-size:1.777rem; color:#fff;
+}
+.hotel_bg .hotel li p:nth-child(3) {
+    margin:10px 0;
+    display:flex; 
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+}
+.hotel_bg .hotel li p:nth-child(3) >* {
+    font-size:1.25rem; color:#fff; font-weight:500; 
+}
+.hotel_bg .hotel li p .en::after {
+    content:'';
+    display:inline-block; width:1px; height:12px;
+    background:#fff; margin:0 15px;
+}
+.hotel_bg .hotel li .desc {}
+.hotel_bg .hotel li .desc >* {
+    color:#fff; letter-spacing:-0.02em; line-height:25px;
+    display:block;
+}
+.hotel_bg .hotel li .desc p::before {
+    content:'';
+    display:inline-block; width:5px; height:5px;
+    border-radius:125%; background:#fff;
+    margin:5px 10px 5px 0;
+}
+/* 이벤트 */
+.event_bg {background:#E1DED9;}
+.event_bg .event {
+    max-width:1440px;  margin:0 auto;
+    padding:100px 0;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.event_bg .event > p {
+    font-family: 'ghanachoco'; font-size:1.333rem; color:#433935;
+    border-radius:30px;
+    padding:10px; background:#F5F4F2; margin-bottom:30px;
+}
+.event_bg .event h2 {
+    font-family: 'ghanachoco'; font-size:3.125rem; color:#433935;
+    margin-bottom:30px;
+}
+.event_bg .event h3 {
+    font-size:1.333rem; color:#433935; line-height:30px;
+    text-align:center;
+}
+.event_bg .event .contents {
+    display:flex; flex-flow:row nowrap;
+    margin-top:70px;
+}
+.event_bg .event .contents .c1 {margin-right:100px;} 
+.event_bg .event .contents div {
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.event_bg .event .contents div .box {
+    max-width:300px; margin-bottom:15px;
+}
+.event_bg .event .contents div .box span {
+    padding:15px 30px; border-radius:30px;
+    background:#C13838; font-weight:700; font-size:1.125rem; color:#fff;
+    margin-bottom:-25px; z-index:100;
+}
+.event_bg .event .contents div .box img {
+    border-radius:30px; overflow:hidden;
+}
+.event_bg .event .contents div > p {
+    font-size:1.5rem; font-weight:700;
+    color:#433935; letter-spacing:-0.02rem;
+}
+.event_bg .event .contents div > p  em {
+    font-size:1.5rem; font-weight:700;
+    color:#C13838; letter-spacing:-0.02rem;
+}
+/* 유의사항 */
+.notice_bg {background:#6F6A66;}
+.notice_bg .notice {
+    padding:100px 0;
+    display:flex; flex-flow:row nowrap; justify-content:center;
+}
+.notice_bg .notice h1 {
+    font-size:1.5rem; color:#E1DED9; margin-right:50px;
+    margin-left:5px;
+}
+.notice_bg .notice h1 img {
+    width:20px; height:20px;
+}
+.notice_bg .notice .list {}
+.notice_bg .notice .list p {
+    color:#E1DED9; letter-spacing:-0.02rem;
+    font-size:1.333rem;
+    margin-bottom:20px;
+}
+.notice_bg .notice .list p:last-child {margin-bottom:0;}
